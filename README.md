@@ -1,18 +1,16 @@
-## Basic Yelp client
-
-Week 3 - *Yelp*
+# Project 3 - *Yelp*
 
 **Yelp** is a Yelp search app using the [Yelp API](http://www.yelp.com/developers/documentation/v2/search_api).
 
-Time spent: **3** hours spent in total
+Time spent: **5** hours spent in total
 
 ## User Stories
 
 The following **required** functionality is completed:
 
-- [X] Table rows for search results should be dynamic height according to the content height.
-- [X] Custom cells should have the proper Auto Layout constraints.
-- [X] Search bar should be in the navigation bar (doesn't have to expand to show location like the real Yelp app does).
+- [ x] Table rows for search results should be dynamic height according to the content height.
+- [ x] Custom cells should have the proper Auto Layout constraints.
+- [ x] Search bar should be in the navigation bar (doesn't have to expand to show location like the real Yelp app does).
 
 The following **optional** features are implemented:
 
@@ -34,13 +32,13 @@ Please list two areas of the assignment you'd like to **discuss further with you
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/g1BrM2l.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-This week I had more on my plate with school and helping other people out so I only got to the required by Sunday but I plan on working on the optionals this week and committing them
+Describe any challenges encountered while building the app.
 
 ## License
 
@@ -56,36 +54,4 @@ This week I had more on my plate with school and helping other people out so I o
     distributed under the License is distributed on an "AS IS" BASIS,
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
-    limitations under the License. is a headless example of how to implement an OAuth 1.0a Yelp API client. The Yelp API provides an application token that allows applications to make unauthenticated requests to their search API.
-
-### Next steps
-
-- Check out `BusinessesViewController.swift` to see how to use the `Business` model.
-
-### Sample request
-
-**Basic search with query**
-
-```
-Business.searchWithTerm("Thai", completion: { (businesses: [Business]!, error: NSError!) -> Void in
-    self.businesses = businesses
-    
-    for business in businesses {
-        print(business.name!)
-        print(business.address!)
-    }
-})
-```
-
-**Advanced search with categories, sort, and deal filters**
-
-```
-Business.searchWithTerm("Restaurants", sort: .Distance, categories: ["asianfusion", "burgers"], deals: true) { (businesses: [Business]!, error: NSError!) -> Void in
-
-    for business in businesses {
-        print(business.name!)
-        print(business.address!)
-    }
-}
-```
-
+    limitations under the License.
